@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4216B315169EDEA5005360CA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4216B314169EDEA5005360CA /* libsqlite3.dylib */; };
+		422D3DC516A1A66100616F2C /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 422D3DC416A1A66100616F2C /* twitter.png */; };
+		422D3DC716A1A6EB00616F2C /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 422D3DC616A1A6EB00616F2C /* facebook.png */; };
+		4269FF3B169C52C800328530 /* DashIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4269FF36169C52C800328530 /* DashIcon.png */; };
+		4269FF3C169C52C800328530 /* MapIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4269FF37169C52C800328530 /* MapIcon.png */; };
+		4269FF3D169C52C800328530 /* NewsIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4269FF38169C52C800328530 /* NewsIcon.png */; };
+		4269FF3E169C52C800328530 /* SponsorIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4269FF39169C52C800328530 /* SponsorIcon.png */; };
+		4269FF3F169C52C800328530 /* TeamIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4269FF3A169C52C800328530 /* TeamIcon.png */; };
+		42C6941C169C510A00CADEEA /* iPhone5Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42C6941B169C510A00CADEEA /* iPhone5Storyboard.storyboard */; };
+		42DFB4C3169FC6A5002844F1 /* NewsBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 42DFB4C2169FC6A5002844F1 /* NewsBG.png */; };
+		42DFB4CA169FCA44002844F1 /* banner.png in Resources */ = {isa = PBXBuildFile; fileRef = 42DFB4C9169FCA44002844F1 /* banner.png */; };
+		42DFB4D0169FCA9F002844F1 /* blog.png in Resources */ = {isa = PBXBuildFile; fileRef = 42DFB4CF169FCA9F002844F1 /* blog.png */; };
+		42E0EA1E169F091D00F0D1E2 /* TeamView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E0EA1D169F091D00F0D1E2 /* TeamView.m */; };
+		42F44361169AF1B000EBF64E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F44360169AF1B000EBF64E /* UIKit.framework */; };
+		42F44363169AF1B000EBF64E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F44362169AF1B000EBF64E /* Foundation.framework */; };
+		42F44365169AF1B000EBF64E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F44364169AF1B000EBF64E /* CoreGraphics.framework */; };
+		42F4436B169AF1B000EBF64E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42F44369169AF1B000EBF64E /* InfoPlist.strings */; };
+		42F4436D169AF1B000EBF64E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F4436C169AF1B000EBF64E /* main.m */; };
+		42F44371169AF1B000EBF64E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F44370169AF1B000EBF64E /* AppDelegate.m */; };
+		42F4437A169AF1B000EBF64E /* iPhone4Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42F44378169AF1B000EBF64E /* iPhone4Storyboard.storyboard */; };
+		42F44384169AF1B000EBF64E /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F44383169AF1B000EBF64E /* SecondViewController.m */; };
+		42F44390169AF1B000EBF64E /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F4438F169AF1B000EBF64E /* SenTestingKit.framework */; };
+		42F44391169AF1B000EBF64E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F44360169AF1B000EBF64E /* UIKit.framework */; };
+		42F44392169AF1B000EBF64E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F44362169AF1B000EBF64E /* Foundation.framework */; };
+		42F4439A169AF1B000EBF64E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42F44398169AF1B000EBF64E /* InfoPlist.strings */; };
+		42F4439D169AF1B000EBF64E /* SunswiftTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 42F4439C169AF1B000EBF64E /* SunswiftTests.m */; };
+		42F443A7169AF1E300EBF64E /* AppIcon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 42F443A6169AF1E300EBF64E /* AppIcon2.png */; };
+		42F443A9169AF1E600EBF64E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 42F443A8169AF1E600EBF64E /* Default.png */; };
+		42F443AB169AF1E900EBF64E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42F443AA169AF1E900EBF64E /* Default@2x.png */; };
+		42F443AD169AF1EC00EBF64E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 42F443AC169AF1EC00EBF64E /* Default-568h@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		42F44393169AF1B000EBF64E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42F44353169AF1B000EBF64E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42F4435B169AF1B000EBF64E;
+			remoteInfo = Sunswift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4216B314169EDEA5005360CA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		422D3DC416A1A66100616F2C /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
+		422D3DC616A1A6EB00616F2C /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		4269FF36169C52C800328530 /* DashIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DashIcon.png; sourceTree = "<group>"; };
+		4269FF37169C52C800328530 /* MapIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MapIcon.png; sourceTree = "<group>"; };
+		4269FF38169C52C800328530 /* NewsIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NewsIcon.png; sourceTree = "<group>"; };
+		4269FF39169C52C800328530 /* SponsorIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SponsorIcon.png; sourceTree = "<group>"; };
+		4269FF3A169C52C800328530 /* TeamIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TeamIcon.png; sourceTree = "<group>"; };
+		42C6941B169C510A00CADEEA /* iPhone5Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = iPhone5Storyboard.storyboard; path = ../iPhone5Storyboard.storyboard; sourceTree = "<group>"; };
+		42DFB4C2169FC6A5002844F1 /* NewsBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NewsBG.png; path = ../../../../Downloads/NewsBG.png; sourceTree = "<group>"; };
+		42DFB4C9169FCA44002844F1 /* banner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = banner.png; path = ../../../../Downloads/banner.png; sourceTree = "<group>"; };
+		42DFB4CF169FCA9F002844F1 /* blog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blog.png; path = ../../../../Downloads/blog.png; sourceTree = "<group>"; };
+		42E0EA1C169F08EE00F0D1E2 /* TeamView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TeamView.h; sourceTree = "<group>"; };
+		42E0EA1D169F091D00F0D1E2 /* TeamView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TeamView.m; sourceTree = "<group>"; };
+		42F4435C169AF1B000EBF64E /* Sunswift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sunswift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42F44360169AF1B000EBF64E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		42F44362169AF1B000EBF64E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		42F44364169AF1B000EBF64E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		42F44368169AF1B000EBF64E /* Sunswift-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Sunswift-Info.plist"; sourceTree = "<group>"; };
+		42F4436A169AF1B000EBF64E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		42F4436C169AF1B000EBF64E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		42F4436E169AF1B000EBF64E /* Sunswift-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Sunswift-Prefix.pch"; sourceTree = "<group>"; };
+		42F4436F169AF1B000EBF64E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		42F44370169AF1B000EBF64E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		42F44379169AF1B000EBF64E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/iPhone4Storyboard.storyboard; sourceTree = "<group>"; };
+		42F44382169AF1B000EBF64E /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		42F44383169AF1B000EBF64E /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		42F4438E169AF1B000EBF64E /* SunswiftTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SunswiftTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		42F4438F169AF1B000EBF64E /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		42F44397169AF1B000EBF64E /* SunswiftTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SunswiftTests-Info.plist"; sourceTree = "<group>"; };
+		42F44399169AF1B000EBF64E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		42F4439B169AF1B000EBF64E /* SunswiftTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SunswiftTests.h; sourceTree = "<group>"; };
+		42F4439C169AF1B000EBF64E /* SunswiftTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SunswiftTests.m; sourceTree = "<group>"; };
+		42F443A6169AF1E300EBF64E /* AppIcon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppIcon2.png; path = ../AppIcon2.png; sourceTree = "<group>"; };
+		42F443A8169AF1E600EBF64E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+		42F443AA169AF1E900EBF64E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		42F443AC169AF1EC00EBF64E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42F44359169AF1B000EBF64E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4216B315169EDEA5005360CA /* libsqlite3.dylib in Frameworks */,
+				42F44361169AF1B000EBF64E /* UIKit.framework in Frameworks */,
+				42F44363169AF1B000EBF64E /* Foundation.framework in Frameworks */,
+				42F44365169AF1B000EBF64E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42F4438A169AF1B000EBF64E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42F44390169AF1B000EBF64E /* SenTestingKit.framework in Frameworks */,
+				42F44391169AF1B000EBF64E /* UIKit.framework in Frameworks */,
+				42F44392169AF1B000EBF64E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42F44351169AF1B000EBF64E = {
+			isa = PBXGroup;
+			children = (
+				4216B314169EDEA5005360CA /* libsqlite3.dylib */,
+				42F44366169AF1B000EBF64E /* Sunswift */,
+				42F44395169AF1B000EBF64E /* SunswiftTests */,
+				42F4435F169AF1B000EBF64E /* Frameworks */,
+				42F4435D169AF1B000EBF64E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		42F4435D169AF1B000EBF64E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42F4435C169AF1B000EBF64E /* Sunswift.app */,
+				42F4438E169AF1B000EBF64E /* SunswiftTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42F4435F169AF1B000EBF64E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42F44360169AF1B000EBF64E /* UIKit.framework */,
+				42F44362169AF1B000EBF64E /* Foundation.framework */,
+				42F44364169AF1B000EBF64E /* CoreGraphics.framework */,
+				42F4438F169AF1B000EBF64E /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42F44366169AF1B000EBF64E /* Sunswift */ = {
+			isa = PBXGroup;
+			children = (
+				42F4436F169AF1B000EBF64E /* AppDelegate.h */,
+				42F44370169AF1B000EBF64E /* AppDelegate.m */,
+				42C6941B169C510A00CADEEA /* iPhone5Storyboard.storyboard */,
+				42F44378169AF1B000EBF64E /* iPhone4Storyboard.storyboard */,
+				42E0EA1C169F08EE00F0D1E2 /* TeamView.h */,
+				42E0EA1D169F091D00F0D1E2 /* TeamView.m */,
+				42F44382169AF1B000EBF64E /* SecondViewController.h */,
+				42F44383169AF1B000EBF64E /* SecondViewController.m */,
+				42F44367169AF1B000EBF64E /* Supporting Files */,
+			);
+			path = Sunswift;
+			sourceTree = "<group>";
+		};
+		42F44367169AF1B000EBF64E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				422D3DC616A1A6EB00616F2C /* facebook.png */,
+				42DFB4C2169FC6A5002844F1 /* NewsBG.png */,
+				42DFB4CF169FCA9F002844F1 /* blog.png */,
+				42DFB4C9169FCA44002844F1 /* banner.png */,
+				422D3DC416A1A66100616F2C /* twitter.png */,
+				4269FF36169C52C800328530 /* DashIcon.png */,
+				4269FF37169C52C800328530 /* MapIcon.png */,
+				4269FF38169C52C800328530 /* NewsIcon.png */,
+				4269FF39169C52C800328530 /* SponsorIcon.png */,
+				4269FF3A169C52C800328530 /* TeamIcon.png */,
+				42F44368169AF1B000EBF64E /* Sunswift-Info.plist */,
+				42F44369169AF1B000EBF64E /* InfoPlist.strings */,
+				42F4436C169AF1B000EBF64E /* main.m */,
+				42F4436E169AF1B000EBF64E /* Sunswift-Prefix.pch */,
+				42F443AC169AF1EC00EBF64E /* Default-568h@2x.png */,
+				42F443AA169AF1E900EBF64E /* Default@2x.png */,
+				42F443A8169AF1E600EBF64E /* Default.png */,
+				42F443A6169AF1E300EBF64E /* AppIcon2.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42F44395169AF1B000EBF64E /* SunswiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				42F4439B169AF1B000EBF64E /* SunswiftTests.h */,
+				42F4439C169AF1B000EBF64E /* SunswiftTests.m */,
+				42F44396169AF1B000EBF64E /* Supporting Files */,
+			);
+			path = SunswiftTests;
+			sourceTree = "<group>";
+		};
+		42F44396169AF1B000EBF64E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42F44397169AF1B000EBF64E /* SunswiftTests-Info.plist */,
+				42F44398169AF1B000EBF64E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42F4435B169AF1B000EBF64E /* Sunswift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42F443A0169AF1B000EBF64E /* Build configuration list for PBXNativeTarget "Sunswift" */;
+			buildPhases = (
+				42F44358169AF1B000EBF64E /* Sources */,
+				42F44359169AF1B000EBF64E /* Frameworks */,
+				42F4435A169AF1B000EBF64E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sunswift;
+			productName = Sunswift;
+			productReference = 42F4435C169AF1B000EBF64E /* Sunswift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		42F4438D169AF1B000EBF64E /* SunswiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42F443A3169AF1B000EBF64E /* Build configuration list for PBXNativeTarget "SunswiftTests" */;
+			buildPhases = (
+				42F44389169AF1B000EBF64E /* Sources */,
+				42F4438A169AF1B000EBF64E /* Frameworks */,
+				42F4438B169AF1B000EBF64E /* Resources */,
+				42F4438C169AF1B000EBF64E /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42F44394169AF1B000EBF64E /* PBXTargetDependency */,
+			);
+			name = SunswiftTests;
+			productName = SunswiftTests;
+			productReference = 42F4438E169AF1B000EBF64E /* SunswiftTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42F44353169AF1B000EBF64E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "UNSW Solar Racing Team";
+			};
+			buildConfigurationList = 42F44356169AF1B000EBF64E /* Build configuration list for PBXProject "Sunswift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 42F44351169AF1B000EBF64E;
+			productRefGroup = 42F4435D169AF1B000EBF64E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42F4435B169AF1B000EBF64E /* Sunswift */,
+				42F4438D169AF1B000EBF64E /* SunswiftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42F4435A169AF1B000EBF64E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42F4436B169AF1B000EBF64E /* InfoPlist.strings in Resources */,
+				42F4437A169AF1B000EBF64E /* iPhone4Storyboard.storyboard in Resources */,
+				42F443A7169AF1E300EBF64E /* AppIcon2.png in Resources */,
+				42F443A9169AF1E600EBF64E /* Default.png in Resources */,
+				42F443AB169AF1E900EBF64E /* Default@2x.png in Resources */,
+				42F443AD169AF1EC00EBF64E /* Default-568h@2x.png in Resources */,
+				42C6941C169C510A00CADEEA /* iPhone5Storyboard.storyboard in Resources */,
+				4269FF3B169C52C800328530 /* DashIcon.png in Resources */,
+				4269FF3C169C52C800328530 /* MapIcon.png in Resources */,
+				4269FF3D169C52C800328530 /* NewsIcon.png in Resources */,
+				4269FF3E169C52C800328530 /* SponsorIcon.png in Resources */,
+				4269FF3F169C52C800328530 /* TeamIcon.png in Resources */,
+				42DFB4C3169FC6A5002844F1 /* NewsBG.png in Resources */,
+				42DFB4CA169FCA44002844F1 /* banner.png in Resources */,
+				42DFB4D0169FCA9F002844F1 /* blog.png in Resources */,
+				422D3DC516A1A66100616F2C /* twitter.png in Resources */,
+				422D3DC716A1A6EB00616F2C /* facebook.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42F4438B169AF1B000EBF64E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42F4439A169AF1B000EBF64E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		42F4438C169AF1B000EBF64E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42F44358169AF1B000EBF64E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42F4436D169AF1B000EBF64E /* main.m in Sources */,
+				42F44371169AF1B000EBF64E /* AppDelegate.m in Sources */,
+				42F44384169AF1B000EBF64E /* SecondViewController.m in Sources */,
+				42E0EA1E169F091D00F0D1E2 /* TeamView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42F44389169AF1B000EBF64E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42F4439D169AF1B000EBF64E /* SunswiftTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42F44394169AF1B000EBF64E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42F4435B169AF1B000EBF64E /* Sunswift */;
+			targetProxy = 42F44393169AF1B000EBF64E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		42F44369169AF1B000EBF64E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42F4436A169AF1B000EBF64E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		42F44378169AF1B000EBF64E /* iPhone4Storyboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42F44379169AF1B000EBF64E /* en */,
+			);
+			name = iPhone4Storyboard.storyboard;
+			sourceTree = "<group>";
+		};
+		42F44398169AF1B000EBF64E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42F44399169AF1B000EBF64E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		42F4439E169AF1B000EBF64E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		42F4439F169AF1B000EBF64E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		42F443A1169AF1B000EBF64E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sunswift/Sunswift-Prefix.pch";
+				INFOPLIST_FILE = "Sunswift/Sunswift-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		42F443A2169AF1B000EBF64E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sunswift/Sunswift-Prefix.pch";
+				INFOPLIST_FILE = "Sunswift/Sunswift-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		42F443A4169AF1B000EBF64E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sunswift.app/Sunswift";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sunswift/Sunswift-Prefix.pch";
+				INFOPLIST_FILE = "SunswiftTests/SunswiftTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		42F443A5169AF1B000EBF64E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Sunswift.app/Sunswift";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Sunswift/Sunswift-Prefix.pch";
+				INFOPLIST_FILE = "SunswiftTests/SunswiftTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42F44356169AF1B000EBF64E /* Build configuration list for PBXProject "Sunswift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42F4439E169AF1B000EBF64E /* Debug */,
+				42F4439F169AF1B000EBF64E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42F443A0169AF1B000EBF64E /* Build configuration list for PBXNativeTarget "Sunswift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42F443A1169AF1B000EBF64E /* Debug */,
+				42F443A2169AF1B000EBF64E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42F443A3169AF1B000EBF64E /* Build configuration list for PBXNativeTarget "SunswiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42F443A4169AF1B000EBF64E /* Debug */,
+				42F443A5169AF1B000EBF64E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 42F44353169AF1B000EBF64E /* Project object */;
+}
