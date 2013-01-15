@@ -256,10 +256,10 @@
             </objects>
             <point key="canvasLocation" x="964" y="848"/>
         </scene>
-        <!--View Controller - MapView-->
+        <!--Map View Controller - MapView-->
         <scene sceneID="2jn-Uc-u2i">
             <objects>
-                <viewController title="MapView" id="7xh-RB-30v" sceneMemberID="viewController">
+                <viewController title="MapView" id="7xh-RB-30v" customClass="MapViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="j1n-Kg-SqZ">
                         <rect key="frame" x="0.0" y="20" width="320" height="411"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -270,7 +270,14 @@
                                 </constraints>
                                 <color key="tintColor" cyan="0.0" magenta="0.0" yellow="0.0" black="0.14000000000000001" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                                 <items>
-                                    <navigationItem title="Map" id="jnj-sg-BY0"/>
+                                    <navigationItem title="Map" id="jnj-sg-BY0">
+                                        <barButtonItem key="leftBarButtonItem" title="car" id="j98-yR-lj9">
+                                            <color key="tintColor" cyan="0.0" magenta="0.0" yellow="0.0" black="0.14000000000000001" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                                            <connections>
+                                                <action selector="btnClick:" destination="7xh-RB-30v" id="H2p-mE-2yD"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" image="NewsBG.png" translatesAutoresizingMaskIntoConstraints="NO" id="FWF-0g-Cmm">
@@ -279,16 +286,30 @@
                                     <constraint firstAttribute="width" constant="344" id="fRj-Ue-Bng"/>
                                 </constraints>
                             </imageView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Im9-0m-ywD">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="408" id="CVZ-Nm-DCC"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="7xh-RB-30v" id="jsl-dt-NBZ"/>
+                                </connections>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" cyan="0.11" magenta="0.070000000000000007" yellow="0.080000000000000002" black="0.0" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
                         <constraints>
-                            <constraint firstItem="FWF-0g-Cmm" firstAttribute="top" secondItem="j1n-Kg-SqZ" secondAttribute="top" constant="27" id="L4v-Dq-k0D"/>
-                            <constraint firstItem="FWF-0g-Cmm" firstAttribute="centerX" secondItem="j1n-Kg-SqZ" secondAttribute="centerX" type="default" id="V8m-yH-mdR"/>
+                            <constraint firstItem="Im9-0m-ywD" firstAttribute="centerX" secondItem="FWF-0g-Cmm" secondAttribute="centerX" type="default" id="3MQ-EX-nsd"/>
+                            <constraint firstItem="Im9-0m-ywD" firstAttribute="top" secondItem="eI5-Gq-mUr" secondAttribute="bottom" type="default" id="3RZ-M4-ad8"/>
+                            <constraint firstItem="Im9-0m-ywD" firstAttribute="leading" secondItem="j1n-Kg-SqZ" secondAttribute="leading" type="default" id="IV4-OU-f2E"/>
+                            <constraint firstItem="FWF-0g-Cmm" firstAttribute="bottom" secondItem="Im9-0m-ywD" secondAttribute="bottom" type="default" id="JEi-nz-j1f"/>
+                            <constraint firstItem="Im9-0m-ywD" firstAttribute="trailing" secondItem="j1n-Kg-SqZ" secondAttribute="trailing" type="default" id="Jpj-wz-AB0"/>
                             <constraint firstItem="eI5-Gq-mUr" firstAttribute="leading" secondItem="j1n-Kg-SqZ" secondAttribute="leading" type="default" id="kML-II-7a5"/>
                             <constraint firstItem="eI5-Gq-mUr" firstAttribute="top" secondItem="j1n-Kg-SqZ" secondAttribute="top" type="default" id="uIq-TR-Ofi"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="MapIcon.png" id="L8K-zj-jeF"/>
+                    <connections>
+                        <outlet property="mapView" destination="Im9-0m-ywD" id="fQ3-Vr-Gpc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cwj-Pp-jO5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -308,6 +329,13 @@
         <image name="twitter.png" width="168" height="219"/>
     </resources>
     <classes>
+        <class className="MapViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MapViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="btnClick:"/>
+                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
+            </relationships>
+        </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>

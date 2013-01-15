@@ -7,8 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LiveData.h"
+#import "Weather.h"
+@interface AppDelegate : UIResponder <UIApplicationDelegate>{
+    LiveData *liveData;
+    Weather *weather;
+}
+@property (nonatomic, readonly) LiveData *liveData;
+@property (nonatomic, readonly) Weather *weather;
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
