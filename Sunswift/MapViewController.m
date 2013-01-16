@@ -44,9 +44,7 @@
 - (void)setStartLocation{
     AppDelegate *dele = [[UIApplication sharedApplication] delegate];
     LiveData *liveData = dele.liveData;
-    while (!liveData.firstUpdate) {
-        ;
-    }
+    
     CLLocationCoordinate2D location;
     if(liveData.longitude == 0 && liveData.latitude == 0){
         //set default to UNSW
@@ -82,9 +80,7 @@
         }
     }
     //show pin
-    while (!liveData.firstUpdate) {
-        ;
-    }
+    
     CLLocationCoordinate2D location;
     NSString *annTitle;
     NSString *annSubtitle;

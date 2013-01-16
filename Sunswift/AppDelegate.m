@@ -59,7 +59,8 @@
     
     liveData = [LiveData alloc];
     weather = [Weather alloc];
-
+    [liveData performSelectorInBackground:@selector(updateData) withObject:nil];
+    [weather performSelectorInBackground:@selector(updateWeather) withObject:nil];
     // Override point for customization after application launch.
     return YES;
 }

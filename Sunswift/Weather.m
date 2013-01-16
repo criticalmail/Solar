@@ -97,6 +97,7 @@
                                     NSDictionary *wDCtemp = [wDC objectAtIndex:0];
                                     if ([wDCtemp count]>0) {
                                         self.iconURL = [wDCtemp objectForKey:@"value"];
+                                        NSLog(@"data received.");
                                         if (self.iconURL != nil) {
                                             NSString *strURL = [self.iconURL stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
                                             
@@ -112,6 +113,7 @@
                                                 
                                                 self.weatherIcon = [UIImage imageWithData:webData];
                                                 self.firstUpdate = 1;
+                                                NSLog(@"icon received");
                                             }
                                             else {
                                                 firstUpdate = 1;
