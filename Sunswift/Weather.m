@@ -115,9 +115,7 @@
                                                 self.firstUpdate = 1;
                                                 NSLog(@"icon received");
                                             }
-                                            else {
-                                                firstUpdate = 1;
-                                            }
+                                            
                                         }
                                         
                                     }
@@ -130,7 +128,7 @@
             
         }
         else{
-            firstUpdate = 1;
+            
             NSLog(@"error");
         }
     }

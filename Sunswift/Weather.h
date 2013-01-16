@@ -21,6 +21,7 @@
     UIImage *weatherIcon;
     
     int firstUpdate;
+    int isError;
 }
 @property (nonatomic,assign) int temp;
 @property (nonatomic,assign) int windspeed;
