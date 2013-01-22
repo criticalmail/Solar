@@ -17,6 +17,12 @@
 		019CE7E916A3C2CB0014F02C /* MyAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 019CE7E516A3C2CB0014F02C /* MyAnnotation.m */; };
 		019CE7EA16A3C2CB0014F02C /* Weather.m in Sources */ = {isa = PBXBuildFile; fileRef = 019CE7E716A3C2CB0014F02C /* Weather.m */; };
 		019CE7EC16A3C7DB0014F02C /* arrest.png in Resources */ = {isa = PBXBuildFile; fileRef = 019CE7EB16A3C7DB0014F02C /* arrest.png */; };
+		01D5CB8916AA3C600082A067 /* SponsorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01D5CB8816AA3C600082A067 /* SponsorsViewController.m */; };
+		01D5CB9016AA44F10082A067 /* iMac_old.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 01D5CB8B16AA44F10082A067 /* iMac_old.jpeg */; };
+		01D5CB9116AA44F10082A067 /* iMac.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 01D5CB8C16AA44F10082A067 /* iMac.jpeg */; };
+		01D5CB9216AA44F10082A067 /* Mac8100.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 01D5CB8D16AA44F10082A067 /* Mac8100.jpeg */; };
+		01D5CB9316AA44F10082A067 /* MacPlus.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 01D5CB8E16AA44F10082A067 /* MacPlus.jpeg */; };
+		01D5CB9416AA44F10082A067 /* MacSE.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 01D5CB8F16AA44F10082A067 /* MacSE.jpeg */; };
 		4216B315169EDEA5005360CA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4216B314169EDEA5005360CA /* libsqlite3.dylib */; };
 		422D3DC516A1A66100616F2C /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = 422D3DC416A1A66100616F2C /* twitter.png */; };
 		422D3DC716A1A6EB00616F2C /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = 422D3DC616A1A6EB00616F2C /* facebook.png */; };
@@ -71,6 +77,13 @@
 		019CE7E616A3C2CB0014F02C /* Weather.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Weather.h; sourceTree = "<group>"; };
 		019CE7E716A3C2CB0014F02C /* Weather.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Weather.m; sourceTree = "<group>"; };
 		019CE7EB16A3C7DB0014F02C /* arrest.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrest.png; sourceTree = "<group>"; };
+		01D5CB8716AA3C600082A067 /* SponsorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SponsorsViewController.h; sourceTree = "<group>"; };
+		01D5CB8816AA3C600082A067 /* SponsorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SponsorsViewController.m; sourceTree = "<group>"; };
+		01D5CB8B16AA44F10082A067 /* iMac_old.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iMac_old.jpeg; sourceTree = "<group>"; };
+		01D5CB8C16AA44F10082A067 /* iMac.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = iMac.jpeg; sourceTree = "<group>"; };
+		01D5CB8D16AA44F10082A067 /* Mac8100.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Mac8100.jpeg; sourceTree = "<group>"; };
+		01D5CB8E16AA44F10082A067 /* MacPlus.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MacPlus.jpeg; sourceTree = "<group>"; };
+		01D5CB8F16AA44F10082A067 /* MacSE.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MacSE.jpeg; sourceTree = "<group>"; };
 		4216B314169EDEA5005360CA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		422D3DC416A1A66100616F2C /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
 		422D3DC616A1A6EB00616F2C /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
@@ -186,6 +199,8 @@
 				42F44383169AF1B000EBF64E /* SecondViewController.m */,
 				019CE7DE16A3953F0014F02C /* MapViewController.h */,
 				019CE7DF16A3953F0014F02C /* MapViewController.m */,
+				01D5CB8716AA3C600082A067 /* SponsorsViewController.h */,
+				01D5CB8816AA3C600082A067 /* SponsorsViewController.m */,
 				42F44367169AF1B000EBF64E /* Supporting Files */,
 			);
 			path = Sunswift;
@@ -194,6 +209,11 @@
 		42F44367169AF1B000EBF64E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				01D5CB8B16AA44F10082A067 /* iMac_old.jpeg */,
+				01D5CB8C16AA44F10082A067 /* iMac.jpeg */,
+				01D5CB8D16AA44F10082A067 /* Mac8100.jpeg */,
+				01D5CB8E16AA44F10082A067 /* MacPlus.jpeg */,
+				01D5CB8F16AA44F10082A067 /* MacSE.jpeg */,
 				019CE7EB16A3C7DB0014F02C /* arrest.png */,
 				019CE7D416A391250014F02C /* banner.png */,
 				019CE7D516A391250014F02C /* blog.png */,
@@ -325,6 +345,11 @@
 				019CE7D816A391250014F02C /* blog.png in Resources */,
 				019CE7D916A391250014F02C /* NewsBG.png in Resources */,
 				019CE7EC16A3C7DB0014F02C /* arrest.png in Resources */,
+				01D5CB9016AA44F10082A067 /* iMac_old.jpeg in Resources */,
+				01D5CB9116AA44F10082A067 /* iMac.jpeg in Resources */,
+				01D5CB9216AA44F10082A067 /* Mac8100.jpeg in Resources */,
+				01D5CB9316AA44F10082A067 /* MacPlus.jpeg in Resources */,
+				01D5CB9416AA44F10082A067 /* MacSE.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,6 +392,7 @@
 				019CE7E816A3C2CB0014F02C /* LiveData.m in Sources */,
 				019CE7E916A3C2CB0014F02C /* MyAnnotation.m in Sources */,
 				019CE7EA16A3C2CB0014F02C /* Weather.m in Sources */,
+				01D5CB8916AA3C600082A067 /* SponsorsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

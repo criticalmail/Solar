@@ -35,7 +35,7 @@
         while (!liveData.firstUpdate) {
             ;
         }
-        if (liveData.latitude == 0 && liveData.longitude == 0) {
+        if (liveData.latitude == 0 || liveData.longitude == 0) {
             latitude = -33.916869;
             longitude = 151.229916;
         }

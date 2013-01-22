@@ -46,7 +46,7 @@
     LiveData *liveData = dele.liveData;
     
     CLLocationCoordinate2D location;
-    if(liveData.longitude == 0 && liveData.latitude == 0){
+    if(liveData.longitude == 0 || liveData.latitude == 0){
         //set default to UNSW
         location = CLLocationCoordinate2DMake(-33.916869,151.229916);
     }
@@ -74,20 +74,20 @@
             [liveData performSelectorInBackground:@selector(updateData) withObject:nil];
             return;
         }
-        else if(liveData.longitude == 0 && liveData.latitude == 0){
+        /*else if(liveData.longitude == 0 || liveData.latitude == 0){
             [liveData performSelectorInBackground:@selector(updateData) withObject:nil];
             return;
-        }
+        }*/
     }
     //show pin
     
     CLLocationCoordinate2D location;
     NSString *annTitle;
     NSString *annSubtitle;
-    if (liveData.longitude == 0 && liveData.latitude == 0) {
+    if (liveData.longitude == 0 || liveData.latitude == 0) {
         location = CLLocationCoordinate2DMake(-33.916869,151.229916);
         annTitle = @"Here's UNSW";
-        annSubtitle = @"The race will begin XX days later!!";
+        annSubtitle = @"There's no race now.";
     }
     else {
         location = CLLocationCoordinate2DMake(liveData.latitude, liveData.longitude);
