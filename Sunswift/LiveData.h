@@ -21,7 +21,6 @@
     double heatsinktemp;
     double latitude;
     double longitude;
-    //NSURLConnection *conn;
     NSData *webData;
     
     int firstUpdate;

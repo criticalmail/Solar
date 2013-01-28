@@ -16,12 +16,13 @@
     NSString *iconURL;
     NSString *winddir;
     int windspeed;
-    //NSURLConnection *conn;
+    
     NSData *webData;
     UIImage *weatherIcon;
     
+    //if the first update is successful, firstUpdate will be set to 1. Otherwise, it's 0.
     int firstUpdate;
-    int isError;
+
 }
 @property (nonatomic,assign) int temp;
 @property (nonatomic,assign) int windspeed;

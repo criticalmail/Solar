@@ -19,10 +19,10 @@
 {
     [super viewDidLoad];
     
-    AppDelegate *dele = [[UIApplication sharedApplication] delegate];
+    /*AppDelegate *dele = [[UIApplication sharedApplication] delegate];
     LiveData *liveData = dele.liveData;
     
-    [liveData performSelectorInBackground:@selector(updateData) withObject:nil];
+    [liveData performSelectorInBackground:@selector(updateData) withObject:nil];*/
 
 }
 
@@ -42,16 +42,19 @@
     [self setStartLocation];
 }
 - (void)setStartLocation{
-    AppDelegate *dele = [[UIApplication sharedApplication] delegate];
+    if (annotation == nil) {
+        return;
+    }
+    /*AppDelegate *dele = [[UIApplication sharedApplication] delegate];
     LiveData *liveData = dele.liveData;
-    
+    */
     CLLocationCoordinate2D location;
-    if(liveData.longitude == 0 || liveData.latitude == 0){
+    if(annotation.coordinate.latitude == 0 || annotation.coordinate.longitude == 0){
         //set default to UNSW
         location = CLLocationCoordinate2DMake(-33.916869,151.229916);
     }
     else {
-        location = CLLocationCoordinate2DMake(liveData.latitude, liveData.longitude);
+        location = CLLocationCoordinate2DMake(annotation.coordinate.latitude, annotation.coordinate.longitude);
     }
     NSLog(@"location: %f, %f",location.latitude,location.longitude);
     MKCoordinateSpan span;
@@ -74,10 +77,7 @@
             [liveData performSelectorInBackground:@selector(updateData) withObject:nil];
             return;
         }
-        /*else if(liveData.longitude == 0 || liveData.latitude == 0){
-            [liveData performSelectorInBackground:@selector(updateData) withObject:nil];
-            return;
-        }*/
+    
     }
     //show pin
     
@@ -120,8 +120,8 @@
     [self updateLocation];
     [self setStartLocation];
 
-    [mapView removeAnnotation:annotation];
-    [mapView addAnnotation:annotation];
+    //[mapView removeAnnotation:annotation];
+    //[mapView addAnnotation:annotation];
     
     timer = [NSTimer scheduledTimerWithTimeInterval:5.0 target:self selector:@selector(updateLocation)userInfo:nil repeats:YES];
 }
@@ -143,16 +143,16 @@
     //MyAnnotation *senderAnnotation = (MyAnnotation *)annot;
     
     NSString *pinReusableIdentifier = @"pin";
-    MKPinAnnotationView *annotationView = (MKPinAnnotationView *)[map dequeueReusableAnnotationViewWithIdentifier:pinReusableIdentifier];
+    MKAnnotationView *annotationView = (MKAnnotationView *)[map dequeueReusableAnnotationViewWithIdentifier:pinReusableIdentifier];
     
     if (annotationView == nil) {
-        annotationView = [[[MKPinAnnotationView alloc] initWithAnnotation:annot reuseIdentifier:pinReusableIdentifier] autorelease];
+        annotationView = [[[MKAnnotationView alloc] initWithAnnotation:annot reuseIdentifier:pinReusableIdentifier] autorelease];
         
     }
     
     annotationView.canShowCallout = YES;
     annotationView.annotation = annot;
-    [annotationView setImage:[UIImage imageNamed:@"arrest.png"]];
+    [annotationView setImage:[UIImage imageNamed:@"pin.png"]];
     
     
     return annotationView;
